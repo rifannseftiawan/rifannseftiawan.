@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      body {
+    background-color: #ffffff;
+    animation: backgroundAnimation 5s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: rgb(122, 199, 70);
+    }
+    50% {
+        background-color: #525252; /* Warna latar belakang setengah jalan */
+    }
+    100% {
+        background-color: #06c000;
+    }
+}
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh HTML, CSS, dan JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selamat Datang!</h1>
+    <p>Klik tombol di bawah ini:</p>
+    <button id="tombol">Klik Saya</button>
+    <p id="hasil"></p>
+    <script src="script.js"></script>
+</body>
+</html>

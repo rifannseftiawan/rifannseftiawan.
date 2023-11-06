@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+ 
+ body {
+    background: linear-gradient(45deg, #f06, #8f6, #06f, #f06);
+    background-size: 400% 400%;
+    animation: rainbowBackground 10s ease infinite;
+}
+
+@keyframes rainbowBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    color: #333;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+
+.logo-container {
+    animation: slideIn 2s forwards;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #3498db, #e74c3c);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Play Audio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1></h1>
+    <audio id="myAudio" autoplay>
+        <source src="djfann.mp3" type="audio/mpeg">
+        Maaf, browser Anda tidak mendukung elemen audio.
+    </audio>
+    <script src="script.js"></script>
+    <div class="logo-container">
+        <div class="logo">ASEKKKK GEBOYY MANG</div>
+    </div>
+</body>
+</html>
